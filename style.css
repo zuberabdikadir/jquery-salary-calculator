@@ -1,0 +1,21 @@
+#total-monthly-salary {
+    float: right;
+    margin-top: 50px;
+}
+
+td, th {
+    border: 1px solid black;
+    width: 200px;
+}
+
+th {
+    background-color: lightgray
+}
+
+header{
+    text-align: center;
+    margin: auto;
+    color: white;
+    background-color: gray;
+    font-size: 36px;
+}
