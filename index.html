@@ -5,22 +5,45 @@
     <script src="jQuery.js" charset="utf-8"></script>
     <script src="client.js" charset="utf-8"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
     <title>jQuery-Salary-Calculator</title>
 </head>
 <body>
     <header>Salary Calculator</header>
-    <h1>Add Employee</h1>
+    <h3>Add Employee</h3>
     <input placeholder="First Name" id="firstNameInput"/>
     <input placeholder="Last Name" id="lastNameInput"/>
     <input placeholder="ID" id="idInput"/>
     <input placeholder="Title" id="titleInput"/>
-    <input placeholder="Annual Salary" id="annualSalaryInput"/>
+    <input placeholder="Annual Salary" id="annualSalaryInput" type="number"/>
     <button id="submitButton">Submit</button>
 
-    <h2>Employee</h2>
-    <ul id="employee">
-    </ul>
+    <h3>Employee</h3>
+    <table>
+        <tbody id="employees">
+            <tr>
+                <th>
+                    First Name
+                </th>
+                <th>
+                    Last Name
+                </th>
+                <th>
+                    ID
+                </th>
+                <th>
+                    Title
+                </th>
+                <th>
+                    Annual Salary
+                </th>
+                <th></th>
+            </tr>        
+        </tbody>
+    </table>
     
-    
+    <div id="total-monthly-salary">
+        Total Monthly: <span id="total-monthly">$0</span>
+    </div>
 </body>
 </html>
